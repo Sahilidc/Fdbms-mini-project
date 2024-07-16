@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+
+
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ibarra Real Nova", "Bodoni Moda" ,serif;
+}
+
+html,body {
+    height:100%;
+    width: 100%; 
+    font-family: "Ibarra Real Nova", "Bodoni Moda" , serif;
+}
+
+nav{
+    /* padding: 2vw 3vw; */
+    height: 12vh;
+    width:100%;
+    /* background-color: #ffffff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+    position: fixed;
+    
+}
+
+
+.ent{
+    display:flex;
+    align-items:center;
+    /* margin-top: -5px; */
+    margin-bottom: 6px;
+    margin-left: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* font-family: 'Intrepid'; */
+    font-family: "Ibarra Real Nova", serif;
+    /* font-stretch:extra-expanded; */
+    gap: 2.5vw;
+    z-index: 4;
+    color:#8E65EE;
+    font-weight:120;
+    font-size: 84%;
+    font-style: bold;
+    position: sticky;
+   }
+
+   .ent h4 {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: 505;
+    color: white;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.ent h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #8E65EE;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.ent h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.ent h4 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 4;
+    left :0;
+}
+
+.ent h4:hover a {
+    color: #fff;
+}
+   
+#logo img{
+        width: 165px;
+        height: auto;
+        border-radius: 50%;
+        overflow: visible;
+        /* margin-top: -6px; */
+        z-index : 5;
+        position: absolute;
+        object-fit: fill;
+        top : 3px;
+        left : 45%;
+        filter: contrast(120%);
+        filter: brightness(110%);
+}
+
+#nation{
+    color:white;
+    z-index : 2;
+    position : absolute; 
+    top : 30%;
+    left :24%;
+    align-items: center;
+}
+#nation h4{
+    color:white;
+    z-index : 2;
+    /* position : absolute;  */
+    font-family: "Bodoni Moda";
+    font-size: 65px;
+}
+#topics{
+    z-index : 2;
+    position : absolute; 
+    top : 50%;
+    left :26%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    
+}
+#topics h4{
+    padding: 15px 30px;
+    border: 3px solid white;
+    border-radius: 60px;
+    font-weight: 505;
+    color: #ffffff;
+    /* background-color: #090979; */
+    background-color: rgb(2,0,36);
+    background-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 25px;
+    overflow: hidden;
+}
+#topics h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #8E65EE;
+    /* background-color: white; */
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#topics h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#topics h4 a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+    left :0;
+}
+
+
+#topics h4:hover a {
+    color: black;
+}
+
+#bgim2 {
+    position: static;  
+    /* margin-top: 650px;   */
+    top:700px;
+    z-index:0;
+    
+}
+
+#bgim2 img {
+    width: 100%;
+    height: 650px;
+    position:relative;
+    top:700px;
+    z-index:0;
+ 
+} 
+#bgim3 {
+    position: static;  
+    /* margin-top: 650px;   */
+    top:600px;
+    z-index:0;
+    
+}
+
+#bgim3 img {
+    width: 100%;
+    height: 350px;
+    position:relative;
+    top:632px;
+    z-index:0;
+    object-fit: cover;
+ 
+} 
+#counts{
+    z-index : 5;
+    position:static; 
+     top : 75%;
+    left :36%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2px;
+    row-gap: -20px;
+    column-gap: 280px;
+    grid-template-rows: 40px 20px;
+    text-align: center;
+}
+
+#counts h4{
+    padding: 15px 30px;
+    margin-top: 110px;
+    margin-left: 55px;
+    font-weight: 150%;
+    font-size: 200px;
+    color: #ffffff;
+    font-size: 25px;
+
+}
+#counts h4 a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    font-size: 36px;
+    z-index: 2;
+    left :0;
+}
+
+#imagebg{
+  
+        object-fit: cover;
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      
+   
+}
+#imagebg img{
+  
+    object-fit: cover;
+    position:static;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+  
+
+}
+ 
+#feature{
+    color:white;
+    z-index : 2;
+    position : absolute; 
+    top : 985px;
+    left :5%;
+    align-items: center;
+}
+#feature h4{
+    color:rgb(168, 75, 244);
+    z-index : 2;
+    /* position : absolute;  */
+    font-family: "Ibarra Real Nova";
+    font-size: 35px;
+    text-shadow: 2px;
+}
+
+#petition-container {
+    z-index : 2;
+    position : absolute; 
+    margin-top: 360px;
+    margin-left: 75px;
+    align-items: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col] 500px [col] 400px [col] 200px [col] 200px  ;
+    grid-template-rows: [row] auto [row] auto [row] ;
+    background-color: black;
+    color: #444;
+    text-decoration: none;
+    }
+    #petition-container h4 a {
+        color:white;
+        z-index : 2;
+        /* position : absolute;  */
+        font-family: "Bodoni Moda";
+        font-size: 25px;
+        text-decoration: none;
+    }
+    
+
+    .box a {
+        text-decoration: none;
+    }
+
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        text-decoration:none;
+        
+      }
+    
+      .a {
+        grid-column: col / span 2;
+        grid-row: row ;
+      }
+      .b {
+        grid-column: col 3 / span 2 ;
+        grid-row: row ;
+      }
+      .c {
+        grid-column: col ;
+        grid-row: row 2 ;
+      }
+      .d {
+        grid-column: col 2 / span 3 ;
+        grid-row: row 2 ;
+      }
+    
+      .e {
+        grid-column: col / span 4;
+        grid-row: row 3;
+      }
+
+
+
+      .footer {
+        position: relative;
+        width: 100%;
+        background: #865DD7;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 550px;
+      }
+      
+      .social-icon,
+      .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+      }
+      
+      .social-icon__item,
+      .menu__item {
+        list-style: none;
+      }
+      
+      .social-icon__link {
+        font-size: 2rem;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+      }
+      .social-icon__link:hover {
+        transform: translateY(-10px);
+      }
+      
+      .menu__link {
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+        font-weight: 300;
+      }
+      
+      .menu__link:hover {
+        opacity: 1;
+      }
+      
+      .footer p {
+        color: #fff;
+        margin: 15px 0 10px 0;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      
+      .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url("C:/Users/saumya/Documents/PETITION PLATFORM/wave1.png");
+        background-size: 1000px 100px;
+      }
+      
+      .wave#wave1 {
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWaves 4s linear infinite;
+      }
+      
+      .wave#wave2 {
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animate 4s linear infinite !important;
+      }
+      
+      .wave#wave3 {
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWaves 3s linear infinite;
+      }
+      
+      .wave#wave4 {
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animate 3s linear infinite;
+      }
+      
+      @keyframes animateWaves {
+        0% {
+          background-position-x: 1000px;
+        }
+        100% {
+          background-positon-x: 0px;
+        }
+      }
+      
+      @keyframes animate {
+        0% {
+          background-position-x: -1000px;
+        }
+        100% {
+          background-positon-x: 0px;
+        }
+      }
+      

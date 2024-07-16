@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crowdfunding Page</title>
+  <style>
+    /* Resetting default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: "Times New Roman", sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f9f6f6;
+      padding: 10px;
+      text-align: right;
+    }
+
+    .crowdfund-button {
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .banner {
+      position: relative;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .banner img {
+      width: 95%;
+      max-height: 15cm;
+    }
+
+    .banner h2 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      text-align: center;
+      color: white;
+      font-size: 60px;
+    }
+
+    .start-fundraiser-button {
+      color: #fff;
+      background-color: #007bff;
+      border: black;
+      padding: 10px 20px;
+      font-size: 30px;
+      cursor: pointer;
+      text-decoration: none; /* Remove underline from link */
+    }
+
+    .start-fundraiser-button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .your-occasion {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .box img {
+      width: 100%;
+    }
+
+    .box h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="crowdfund-button">Crowdfund</button>
+  </header>
+  <div class="banner">
+    <img src="hompagepic.jpg" alt="Doing Good in the World Together">
+    <h2>Doing Good in the World Together</h2>
+    <a href="start_fundraiser.html" class="start-fundraiser-button">Start Fundraiser</a>
+  </div>
+  <main>
+    <section class="your-occasion">
+      <h2>Your Occasion</h2>
+    </section>
+    <section class="options">
+      <div class="box">
+        <h3>Startup Venture</h3>
+        <img src="startup.jpg" alt="Startup Venture">
+      </div>
+      <div class="box">
+        <h3>Environment Cause</h3>
+        <img src="environment.jpg" alt="Environment Cause">
+      </div>
+      <div class="box">
+        <h3>Community Development</h3>
+        <img src="community.jpg" alt="Community Development">
+      </div>
+      <div class="box">
+        <h3>Arts and Culture Event</h3>
+        <img src="arts.jpg" alt="Arts and Culture Event">
+      </div>
+      <div class="box">
+        <h3>Sports and Athletics</h3>
+        <img src="sports.jpg" alt="Sports and Athletics">
+      </div>
+      <div class="box">
+        <h3>Animal Welfare and Rescue</h3>
+        <img src="animal.jpg" alt="Animal Welfare and Rescue">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Crowdfunding Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>

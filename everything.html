@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CATALYST | PETITION </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="everything.css">
+  </head>
+
+  <body>
+    <div id ="main">
+     <div id="imagebg">
+         <img src = "p_bg.jpg" >
+     </div>
+         <nav>
+           <div id = "navc">
+             <div class ="1ent">
+                    <h4><a href="#"> </a> </h4>   
+             </div>
+                     <div id = "logo">   
+                        <img src = "Screenshot__27_-removebg-preview-removebg-preview.png">
+                     </div>
+          </div>
+             <div class="ent">
+                <div class ="ent">
+                    <h4><a href="#"></a> </h4>
+             </div>
+         </nav>
+        <div class = "det">
+            <h4> Petition Details </h4>
+            <form action ="k.php" method="post">
+                <h3> What is the scope of your petition? </h3>
+                <div class="container">
+                    <div class="radio-tile-group">
+                      <div class="input-container">
+                            <input id="global" type="radio" name="scope" value="Global">
+                            <div class="radio-tile">
+                                <ion-icon name="earth"></ion-icon>
+                                <label for="global">Global</label>
+                           </div>
+                      </div>
+            
+                      <div class="input-container">
+                            <input id="national" type="radio" name="scope" value="National">
+                            <div class="radio-tile">
+                                 <ion-icon name="location"></ion-icon>
+                                 <label for="national">National</label>
+                            </div>
+                     </div>
+            
+                      <div class="input-container">
+                           <input id="local" type="radio" name="scope" value="local">
+                           <div class="radio-tile">
+                             <ion-icon name="home"></ion-icon>
+                             <label for="local">Local</label>
+                           </div>
+                     </div>
+                 </div>
+              </div>
+                    <h2> Define category for your petition. </h2>
+                    <div class="container">
+                      <div class="radio-tile-group">
+                          <div class="input-container">
+                             <input id="Environment" type="radio" name="category" value="Environment">
+                              <div class="radio-tile">
+                                 <ion-icon name="leaf"></ion-icon>
+                                 <label for="Environment">Environment</label>
+                              </div>
+                          </div>
+                  
+                          <div class="input-container">
+                              <input id="Economic Justice" type="radio" name="category" value="Economic">
+                               <div class="radio-tile">
+                                    <ion-icon name="analytics"></ion-icon>
+                                    <label for="Economic Justice">Economic <br> Justice</label>
+                               </div>
+                          </div>
+                  
+                          <div class="input-container">
+                                <input id="local" type="radio" name="category" value="Women Rights"> 
+                                <div class="radio-tile">
+                                     <ion-icon name="female"></ion-icon>
+                                    <label for="local">Women's <br>Rights</label>
+                                </div>
+                          </div>
+          
+                          <div class="input-container">
+                                <input id="Education" type="radio" name="category" value="Education">
+                                 <div class="radio-tile">
+                                     <ion-icon name="school"></ion-icon>
+                                        <label for="Education">Education</label>
+                                 </div>
+                          </div>
+          
+                            <div class="input-container">
+                                 <input id="Disability" type="radio" name="category" value="Disability">
+                                    <div class="radio-tile">
+                                        <ion-icon name="accessibility"></ion-icon>
+                                          <label for="Disability">Disability</label>
+                                    </div>
+                            </div>
+          
+                            <div class="input-container">
+                              <input id="Sports & Media" type="radio" name="category" value="Sports">
+                              <div class="radio-tile">
+                                  <ion-icon name="megaphone"></ion-icon>
+                                <label for="Sports & Media">Sports <br> & Media</label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="inputBox">
+                         <input type="text" required = "required" name="info">
+                         <span>Petition Title</span>
+                        </div>
+                        
+                        <div class="inputBox">
+                          <textarea class="textarea" placeholder="Write the description..." name="det">
+                          </textarea>
+                          <span>Description</span>
+                        </div>
+              
+                        <div class="input-con1">
+                            <input type="text" id="pto"  autocomplete="off" placeholder="Enter the organisation/institution name the petition is to... " required class="text-input" name="petition_to">
+                            <label for="pto" class="label">Petition to</label>
+                        </div>
+      
+      
+                       <div class="input-con2">
+                            <input type="text" id="pby"  autocomplete="off" placeholder="Enter your name/community name... " required class="text-input" name="petition_by">
+                            <label for="pby" class="label">Petition by</label>
+                      </div>
+
+                       <div class="input-con3">
+                            <input type="date" id="pdate"  autocomplete="off" value="0000-00-00" class="text-input" name="petition_date">
+                            <label for="pdate" class="label">Petition Date</label>
+                       </div>
+        
+                      <div class="input-con4">
+                            <input type="text" id="plocation"  autocomplete="off" placeholder="Pune,India " required class="text-input" name="location">
+                            <label for="plocation" class="label">Location</label>
+                      </div>
+
+                          <div class="button">
+                              <form action="k.php" method="post">
+                                   <input type="submit" value="Submit &raquo;">
+                              </form>
+                         </div>
+        </div>
+
+         <div id = "bgim2">
+            <img src = "create a subtle 5db0b1cb-22b8-4fc4-8389-beb9913214ef.png" >
+         </div>
+
+         <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+            </ul>
+            <p>&copy;2024 Catalyst for Change | All Rights Reserved</p>
+          </footer>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+   </div>
+     
+
+
+ <script src="petition.js"></script>
+</body>
